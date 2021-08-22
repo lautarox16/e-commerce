@@ -1,0 +1,15 @@
+#TLogin {
+  font-family: sans-serif;
+}
+
+#log {
+  color: whitesmoke;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: blue;
+}
+
+#logoLogin {
+  width: 80%;
+  margin-bottom: -30px;
+}
