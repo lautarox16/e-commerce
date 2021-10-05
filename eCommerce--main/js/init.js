@@ -49,4 +49,18 @@ var getJSONData = function (url) {
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
-document.addEventListener("DOMContentLoaded", function (e) {});
+document.addEventListener("DOMContentLoaded", function (e) {
+  document.getElementsByClassName(
+    "container d-flex flex-column flex-md-row justify-content-between"
+  )[0].innerHTML += `<a role="button" class="py-2 d-none d-md-inline-block dropdown-toggle" id="btnUser" data-toggle="dropdown" aria-expanded="true"  style="color:white;"> ${sessionStorage.getItem(
+    "user"
+  )}
+  <span calss="caret"> </span>
+   </a> 
+   <div class="dropdown-menu" aria-labelledby="btnUser">
+    <a class="dropdown-item" href="cart.html">Mi Carrito</a>
+    <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+    <a class="dropdown-item" href="login.html">Cerrar Sesion</a>
+  </div>
+  `;
+});

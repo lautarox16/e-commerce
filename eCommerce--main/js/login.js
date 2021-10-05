@@ -8,6 +8,8 @@ const login = () => {
     document.getElementById("contraseña").value
   ) {
     sessionStorage.setItem("logueado", true);
+    sessionStorage.setItem("user", document.getElementById("usuario").value);
+
     window.location = "index.html";
   } else {
     alert("Usuario y contraseña no deben ser vacíos");
